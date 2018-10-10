@@ -17,8 +17,9 @@ public class Generovani_mnozin {
         int odpocet = 0;
         ArrayList<Integer> mnozina1 = new ArrayList<Integer>(pocetPrvku1);
         while (odpocet<pocetPrvku1){
-            mnozina1.add(rd.nextInt()*50-30);
+            mnozina1.add(rd.nextInt(50)-30);
             odpocet++;
         }
+        System.out.println(mnozina1);
         }
     }
