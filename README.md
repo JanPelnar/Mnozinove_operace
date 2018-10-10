@@ -1,1 +1,0 @@
-# Mnozinove_operace
