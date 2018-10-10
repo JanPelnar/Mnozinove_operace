@@ -5,7 +5,7 @@ public class Generovani_mnozin {
 
     Scanner sc = new Scanner(System.in);
     Random rd = new Random();
-    public int[] generovaniPrvniMnoziny(){
+    public void generovaniPrvniMnoziny(){
         System.out.println("Zadejte počet prvků množiny, rozmezí je od 10 do 20");
         int pocetPrvku1 = 0;
         while (pocetPrvku1<10||pocetPrvku1>20){
@@ -14,9 +14,9 @@ public class Generovani_mnozin {
         int odpocet = 0;
         int[] mnozina1 = new int[pocetPrvku1];
         while (odpocet<pocetPrvku1){
-            mnozina1[odpocet]=(rd.nextInt(50)-30);
+            mnozina1[odpocet]=rd.nextInt(30)-20;
             odpocet++;
         }
-        return mnozina1;
+        System.out.println(mnozina1);
         }
     }
