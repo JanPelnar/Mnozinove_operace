@@ -2,37 +2,34 @@
 package withkaja;
 import java.util.Arrays;
 public class Sjednoceni_mnozin {
-    int pocetPrvku1 = 3;
-    int pocetPrvku2 = 2;
-    int[] mnozina1 = new int[pocetPrvku1];
-    int[] mnozina2 = new int[pocetPrvku2];    
+
     
-    
+
+    public void Sjednoceni_mnozin(int[] mnozina1,int[] mnozina2){
     
     int odpocet = 0;
     int i = 0;
-    public int[] Sjednoceni_mnozin(){
         mnozina1[0] = 5;
         mnozina1[1] = 5;
         mnozina1[2] = 6;
         mnozina2[0] = 8;
         mnozina2[1] = 1;
-        int[] sjednoceni = new int[pocetPrvku1 + pocetPrvku2];
-            while(odpocet < pocetPrvku1){
+        int[] sjednoceni = new int[mnozina1.length + mnozina2.length];
+            while(odpocet < mnozina1.length){
                 sjednoceni[odpocet] = mnozina1[odpocet];
                 odpocet++;
             }
-            while(odpocet < (pocetPrvku1 + pocetPrvku2)){
+            while(odpocet < (mnozina1.length + mnozina2.length)){
                 sjednoceni[odpocet] = mnozina2[i];
                 i++;
                 odpocet++;
             }
               int index = 0; 
               int pozice = 0; 
-        while(pozice < (pocetPrvku1 + pocetPrvku2)){ 
+        while(pozice < (mnozina1.length + mnozina2.length)){ 
                   i = 0;   
             int maximum = sjednoceni[index]; 
-            while(i < (pocetPrvku1 + pocetPrvku2)){ 
+            while(i < (mnozina1.length + mnozina2.length)){ 
                 if(sjednoceni[i] < maximum){ 
                     maximum = sjednoceni[i]; 
                     sjednoceni[i] = sjednoceni[index]; 
@@ -45,7 +42,7 @@ public class Sjednoceni_mnozin {
         }
         pozice = 0;
         int zdvojennych = 0;
-        while(pozice < (pocetPrvku1 + pocetPrvku2-1)){
+        while(pozice < (mnozina1.length + mnozina2.length-1)){
             if(sjednoceni[pozice] == sjednoceni[pozice+1]){
                 sjednoceni[pozice] = -21;
                 zdvojennych++;
@@ -53,13 +50,13 @@ public class Sjednoceni_mnozin {
             pozice++;
             
         }
-        int[] sp = new int[pocetPrvku1 + pocetPrvku2 - zdvojennych];      
+        int[] sp = new int[mnozina1.length + mnozina2.length - zdvojennych];      
         index = 0; 
         pozice = 0; 
-        while(pozice < (pocetPrvku1+pocetPrvku2)){ 
+        while(pozice < (mnozina1.length+mnozina2.length)){ 
                   i = 0;   
             int maximum = sjednoceni[index]; 
-            while(i < (pocetPrvku1 + pocetPrvku2)){ 
+            while(i < (mnozina1.length + mnozina2.length)){ 
                 if(sjednoceni[i] < maximum){ 
                     maximum = sjednoceni[i]; 
                     sjednoceni[i] = sjednoceni[index]; 
@@ -71,13 +68,14 @@ public class Sjednoceni_mnozin {
             index++;       
         }
         pozice = 0;
-        while(pozice < (pocetPrvku1 + pocetPrvku2 - zdvojennych)){
+        while(pozice < (mnozina1.length + mnozina2.length - zdvojennych)){
             sp[pozice] = sjednoceni[pozice];
             pozice++;
         }
-        return sp;
+        System.out.println(Arrays.toString(sp));
         }
     }        
+
 
 
 
