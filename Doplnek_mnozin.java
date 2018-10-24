@@ -1,5 +1,5 @@
 
-package withkaja;
+
 import java.util.Arrays;
 public class Doplnek_mnozin {
             int i;
