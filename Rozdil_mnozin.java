@@ -1,9 +1,7 @@
 package mnoziny;
-
 import java.util.Arrays;
-
 public class Rozdil_mnozin {
-     public void Rozdil_mnoziny1(int[] mnozina1,int[] mnozina2){
+public void Rozdil_mnoziny1(int[] mnozina1,int[] mnozina2){
               int i = 0;
               int index = 0; 
               int pozice = 0; 
@@ -72,7 +70,10 @@ public class Rozdil_mnozin {
             }
             indexRozdilu=0;
             while (rozdil[indexRozdilu]!=0 && rozdil[indexRozdilu+1]!=0){
+            
             System.out.print("{"+rozdil[indexRozdilu]+"} ");
-            indexRozdilu++;}
+            
+            indexRozdilu++;
+            }
      }
 }
