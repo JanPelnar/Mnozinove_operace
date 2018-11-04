@@ -1,7 +1,7 @@
 package mnoziny;
 import java.util.Arrays;
 public class Rozdil_mnozin {
-public void Rozdil_mnoziny1(int[] mnozina1,int[] mnozina2){
+ public void Rozdil_mnoziny1(int[] mnozina1,int[] mnozina2){
               int i = 0;
               int index = 0; 
               int pozice = 0; 
@@ -41,39 +41,54 @@ public void Rozdil_mnoziny1(int[] mnozina1,int[] mnozina2){
             i = 0;
             while (i<mnozina1.length-1){
                 if (mnozina1[i] == mnozina1[i+1]){
-                    mnozina1[i+1] = -21;
+                    mnozina1[i] = -21;
                 }
+                
                 i++;
             }
-                
+            
+            
             i = 0;
-            int[] rozdil = new int[mnozina1.length];
             index = 0;
             int vyskyt = 0;
-            int indexRozdilu = 0;
-            while(mnozina1.length>i){
+            int pocetCisel = 0;
+            while (mnozina1.length>i){
                 while (mnozina2.length>index){
-                    if (mnozina1[i] == mnozina2[index]){
+                    if(mnozina1[i] == mnozina2[index]){
                         vyskyt++;
-                       
                     }
                     index++;
-                    
+                    }
+                
+                if (vyskyt==0 && mnozina1[i] != -21){
+                    pocetCisel++;
+                     }
+                
+                vyskyt = 0;
+                i++;
+                index = 0;
+            }
+            
+            int[] rozdil = new int[pocetCisel];
+            i = 0;
+            index = 0;
+            vyskyt = 0;
+            int rozdilIndex = 0;
+            while (mnozina1.length>i){
+                while (mnozina2.length>index){
+                    if(mnozina1[i] == mnozina2[index]){
+                        vyskyt++;
+                    }
+                    index++;
                 }
-                if (vyskyt == 0 && mnozina1[i] != -21){
-                    rozdil[indexRozdilu] = mnozina1[i];
-                    indexRozdilu++;
-                }
+                if (vyskyt==0 && mnozina1[i] != -21){
+                    rozdil[rozdilIndex] = mnozina1[i];
+                    rozdilIndex++;
+                     }
                 i++;
                 vyskyt = 0;
                 index = 0;
             }
-            indexRozdilu=0;
-            while (rozdil[indexRozdilu]!=0 && rozdil[indexRozdilu+1]!=0){
-            
-            System.out.print("{"+rozdil[indexRozdilu]+"} ");
-            
-            indexRozdilu++;
-            }
-     }
+            System.out.println(Arrays.toString(rozdil));
+ }
 }
