@@ -1,7 +1,9 @@
 package mnoziny;
+
 import java.util.Arrays;
+
 public class Rozdil_mnozin {
- public void Rozdil_mnoziny1(int[] mnozina1,int[] mnozina2){
+ public static int[] Rozdil_mnoziny1(int[] mnozina1,int[] mnozina2){
               int i = 0;
               int index = 0; 
               int pozice = 0; 
@@ -90,9 +92,10 @@ public class Rozdil_mnozin {
                 index = 0;
             }
             System.out.println("Rozdíl množiny A = " + Arrays.toString(rozdil1));
+            return rozdil1;
  }
  
- public void Rozdil_mnoziny2(int[] mnozina1,int[] mnozina2){
+ public static int[] Rozdil_mnoziny2(int[] mnozina1,int[] mnozina2){
               int i = 0;
               int index = 0; 
               int pozice = 0; 
@@ -180,6 +183,7 @@ public class Rozdil_mnozin {
                 vyskyt = 0;
                 index = 0;
             }
-            System.out.println("Rozdíl množiny B = " + Arrays.toString(rozdil2));
+            System.out.println("Rozdíl množiny A = " + Arrays.toString(rozdil2));
+            return rozdil2;
  }
 }
