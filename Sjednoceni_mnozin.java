@@ -44,7 +44,7 @@ public class Sjednoceni_mnozin {
         int zdvojennych = 0;
         while(pozice < (mnozina1.length + mnozina2.length-1)){
             if(sjednoceni[pozice] == sjednoceni[pozice+1]){
-                sjednoceni[pozice] = -21;
+                sjednoceni[pozice] = -31;
                 zdvojennych++;
             }
             pozice++;
