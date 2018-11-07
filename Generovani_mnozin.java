@@ -13,7 +13,7 @@ public class Generovani_mnozin {
         int odpocet = 0;
         int[] mnozina1 = new int[pocetPrvku1];
         while (odpocet<pocetPrvku1){
-            mnozina1[odpocet]=rd.nextInt(31)-20;
+            mnozina1[odpocet]=rd.nextInt(51)-30;
             odpocet++;
         }
         return mnozina1;
