@@ -1,19 +1,13 @@
-
-package withkaja;
+package mnoziny;
 import java.util.Arrays;
 public class Sjednoceni_mnozin {
 
     
 
-    public void Sjednoceni_mnozin(int[] mnozina1,int[] mnozina2){
+    public static int[] Sjednoceni_mnozin(int[] mnozina1,int[] mnozina2){
     
     int odpocet = 0;
     int i = 0;
-        mnozina1[0] = 5;
-        mnozina1[1] = 5;
-        mnozina1[2] = 6;
-        mnozina2[0] = 8;
-        mnozina2[1] = 1;
         int[] sjednoceni = new int[mnozina1.length + mnozina2.length];
             while(odpocet < mnozina1.length){
                 sjednoceni[odpocet] = mnozina1[odpocet];
@@ -30,12 +24,12 @@ public class Sjednoceni_mnozin {
                   i = 0;   
             int maximum = sjednoceni[index]; 
             while(i < (mnozina1.length + mnozina2.length)){ 
-                if(sjednoceni[i] < maximum){ 
-                    maximum = sjednoceni[i]; 
-                    sjednoceni[i] = sjednoceni[index]; 
-                    sjednoceni[index] = maximum; 
-                } 
-                i++; 
+                if(sjednoceni[i] < maximum){
+                    maximum = sjednoceni[i];
+                    sjednoceni[i] = sjednoceni[index];
+                    sjednoceni[index] = maximum;
+                }
+                i++;
             } 
             pozice++; 
             index++;       
@@ -73,9 +67,6 @@ public class Sjednoceni_mnozin {
             pozice++;
         }
         System.out.println(Arrays.toString(sp));
+        return sp;
         }
     }        
-
-
-
-
