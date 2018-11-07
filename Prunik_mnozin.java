@@ -5,7 +5,7 @@ package withkaja;
 import java.util.Arrays;
 
 public class Prunik_mnozin {
-    public void Prunik_mnozin(int[] mnozina1,int[] mnozina2){
+    public static int[] Prunik_mnozin(int[] mnozina1,int[] mnozina2){
         int odpocet = 0;
         int i = 0;
             int[] prunik = new int[mnozina1.length + mnozina2.length];
@@ -88,5 +88,6 @@ public class Prunik_mnozin {
                 pozice++;
             }
             System.out.println(Arrays.toString(pr));
+        return pr;
     }
 }
