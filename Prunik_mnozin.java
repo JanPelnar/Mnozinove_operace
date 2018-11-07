@@ -39,10 +39,10 @@ public class Prunik_mnozin {
 
             
             pozice = 0;
-            prunik[prunik.length-1] = -21;
+            prunik[prunik.length-1] = -31;
             while(pozice < (prunik.length-1)){
                     if(prunik[pozice] != prunik[pozice+1]){
-                    prunik[pozice] = -21;
+                    prunik[pozice] = -31;
                     
                 }
               
@@ -52,7 +52,7 @@ public class Prunik_mnozin {
             pozice =0;
             while(pozice<(prunik.length-1)){
             if(prunik[pozice] == prunik[pozice+1]){
-                      prunik[pozice] = -21;
+                      prunik[pozice] = -31;
                      
                     
                 }
@@ -60,7 +60,7 @@ public class Prunik_mnozin {
             }
             pozice = 0;
             while(pozice<prunik.length){
-                if(prunik[pozice] == -21){
+                if(prunik[pozice] == -31){
                     dvj++;
                 }
                 pozice++;
