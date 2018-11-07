@@ -41,7 +41,7 @@ public class Rozdil_mnozin {
             i = 0;
             while (i<mnozina1.length-1){
                 if (mnozina1[i] == mnozina1[i+1]){
-                    mnozina1[i] = -21;
+                    mnozina1[i] = -31;
                 }
                 
                 i++;
@@ -60,7 +60,7 @@ public class Rozdil_mnozin {
                     index++;
                     }
                 
-                if (vyskyt==0 && mnozina1[i] != -21){
+                if (vyskyt==0 && mnozina1[i] != -31){
                     pocetCisel++;
                      }
                 
@@ -81,7 +81,7 @@ public class Rozdil_mnozin {
                     }
                     index++;
                 }
-                if (vyskyt==0 && mnozina1[i] != -21){
+                if (vyskyt==0 && mnozina1[i] != -31){
                     rozdil1[rozdilIndex] = mnozina1[i];
                     rozdilIndex++;
                      }
@@ -132,7 +132,7 @@ public class Rozdil_mnozin {
             i = 0;
             while (i<mnozina2.length-1){
                 if (mnozina2[i] == mnozina2[i+1]){
-                    mnozina2[i] = -21;
+                    mnozina2[i] = -31;
                 }
                 
                 i++;
@@ -151,7 +151,7 @@ public class Rozdil_mnozin {
                     index++;
                     }
                 
-                if (vyskyt==0 && mnozina2[i] != -21){
+                if (vyskyt==0 && mnozina2[i] != -31){
                     pocetCisel++;
                      }
                 
@@ -172,7 +172,7 @@ public class Rozdil_mnozin {
                     }
                     index++;
                 }
-                if (vyskyt==0 && mnozina2[i] != -21){
+                if (vyskyt==0 && mnozina2[i] != -31){
                     rozdil2[rozdilIndex] = mnozina2[i];
                     rozdilIndex++;
                      }
