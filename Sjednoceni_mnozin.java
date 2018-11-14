@@ -66,6 +66,7 @@ public class Sjednoceni_mnozin {
             sp[pozice] = sjednoceni[pozice];
             pozice++;
         }
+        System.out.print("Sjednocení množin je: ");
         System.out.println(Arrays.toString(sp));
         return sp;
         }
