@@ -21,7 +21,6 @@ public class Rozdil_mnozin {
             pozice++; 
             index++;       
         }
-              System.out.println("Množina A = " + Arrays.toString(mnozina1));
               i = 0;
               index = 0; 
               pozice = 0; 
@@ -39,7 +38,6 @@ public class Rozdil_mnozin {
             pozice++;
             index++;
         }
-            System.out.println("Množina B = " + Arrays.toString(mnozina2));
             i = 0;
             while (i<mnozina1.length-1){
                 if (mnozina1[i] == mnozina1[i+1]){
@@ -113,7 +111,6 @@ public class Rozdil_mnozin {
             pozice++; 
             index++;       
         }
-              System.out.println("Množina A = " + Arrays.toString(mnozina1));
               i = 0;
               index = 0; 
               pozice = 0; 
@@ -131,7 +128,6 @@ public class Rozdil_mnozin {
             pozice++;
             index++;
         }
-            System.out.println("Množina B = " + Arrays.toString(mnozina2));
             i = 0;
             while (i<mnozina2.length-1){
                 if (mnozina2[i] == mnozina2[i+1]){
@@ -183,7 +179,7 @@ public class Rozdil_mnozin {
                 vyskyt = 0;
                 index = 0;
             }
-            System.out.println("Rozdíl množiny A = " + Arrays.toString(rozdil2));
+            System.out.println("Rozdíl množiny B = " + Arrays.toString(rozdil2));
             return rozdil2;
  }
 }
