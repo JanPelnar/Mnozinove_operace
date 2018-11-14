@@ -45,8 +45,6 @@
                 pozice++;
 
             }
-            System.out.println(zdvojennych);
-
             int[] sp = new int[mnozina1.length + mnozina2.length - zdvojennych];      
             index = 0; 
             pozice = 0; 
